@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NavigationTextButton extends StatelessWidget {
   final VoidCallback onTap;
@@ -13,10 +14,7 @@ class NavigationTextButton extends StatelessWidget {
         onPressed: onTap,
         child: Text(
           text,
-          style: Theme.of(context)
-              .textTheme
-              .labelMedium!
-              .copyWith(fontWeight: FontWeight.bold, color: Colors.white),
+          style: GoogleFonts.balooDa2(fontSize: 15, fontWeight: FontWeight.bold,color: Colors.white),
         ));
   }
 }

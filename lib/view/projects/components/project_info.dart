@@ -8,8 +8,9 @@ import 'image_viewer.dart';
 
 class ProjectStack extends StatelessWidget {
   final controller = Get.put(ProjectController());
-  ProjectStack({super.key, required this.index});
+  ProjectStack({super.key, required this.index,this.isDetailed});
   final int index;
+bool?  isDetailed=false;
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -17,7 +18,7 @@ class ProjectStack extends StatelessWidget {
         controller.onHover(index, value);
       },
       onTap: () {
-        ImageViewer(context,projectList[index].image);
+        //ImageViewer(context,projectList[index].image);
       },
       borderRadius: BorderRadius.circular(30),
       child: AnimatedContainer(
@@ -26,7 +27,7 @@ class ProjectStack extends StatelessWidget {
               borderRadius: BorderRadius.circular(30),
               color: bgColor),
           duration: const Duration(milliseconds: 500),
-          child: ProjectDetail(index: index,),
+          child: ProjectCard(index: index,isDetailed: isDetailed,),
       ),
     );
   }

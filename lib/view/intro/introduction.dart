@@ -13,11 +13,11 @@ class Introduction extends StatelessWidget {
           SizedBox(
             width: MediaQuery.sizeOf(context).width * 0.01,
           ),
-          if (!Responsive.isLargeMobile(context))  MenuButton(onTap: () => Scaffold.of(context).openDrawer(),),
+       //   if (!Responsive.isLargeMobile(context))  MenuButton(onTap: () => Scaffold.of(context).openDrawer(),),
           SizedBox(
             width: MediaQuery.sizeOf(context).width * 0.02,
           ),
-          if (!Responsive.isLargeMobile(context)) const SocialMediaIconList(),
+         // if (!Responsive.isLargeMobile(context)) const SocialMediaIconList(),
           SizedBox(
             width: MediaQuery.sizeOf(context).width * 0.07,
           ),

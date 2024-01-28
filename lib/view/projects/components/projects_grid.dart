@@ -12,7 +12,7 @@ class ProjectGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      padding: const EdgeInsets.symmetric(horizontal: 30),
+      padding:   EdgeInsets.symmetric(horizontal:crossAxisCount==1?5: 30),
       itemCount: projectList.length,
       gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: crossAxisCount, childAspectRatio: ratio),
@@ -38,7 +38,7 @@ class ProjectGrid extends StatelessWidget {
                       offset: const Offset(2, 0),
                       blurRadius: controller.hovers[index] ? 20 : 10,),
                 ]),
-            child: ProjectStack(index: index)
+            child: ProjectStack(index: index,isDetailed: false,)
         ));
       },
     );

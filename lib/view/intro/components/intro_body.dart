@@ -61,6 +61,9 @@ class IntroBody extends StatelessWidget {
                 height: defaultPadding * 2,
               ),
               const DownloadButton(),
+                 const SizedBox(
+                height: defaultPadding * 2,
+              ),
             ],
           ),
         ),

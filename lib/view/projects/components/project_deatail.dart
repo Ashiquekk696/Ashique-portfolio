@@ -5,9 +5,10 @@ import '../../../model/project_model.dart';
 import '../../../res/constants.dart';
 import '../../../view model/responsive.dart';
 
-class ProjectDetail extends StatelessWidget {
+class ProjectCard extends StatelessWidget {
   final int index;
-  const ProjectDetail({super.key, required this.index});
+    ProjectCard({super.key, required this.index,this.isDetailed});
+   bool? isDetailed =false;
   @override
   Widget build(BuildContext context) {
     var size=MediaQuery.sizeOf(context);
@@ -25,11 +26,20 @@ class ProjectDetail extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),),
+    
         Responsive.isMobile(context) ?  const SizedBox(height: defaultPadding/2,) : const SizedBox(height: defaultPadding,),
-        Text(projectList[index].description,style: const TextStyle(color: Colors.grey,height: 1.5),maxLines: size.width>700 && size.width< 750 ? 3:  size.width<470  ? 2  : size.width>600 && size.width<700 ?     6:  size.width>900 && size.width <1060 ? 6: 4 ,overflow: TextOverflow.ellipsis,),
-        const Spacer(),
-        ProjectLinks(index: index,),
-        const SizedBox(height: defaultPadding/2,),
+        Text(projectList[index].description,style:   TextStyle(color:isDetailed==true?Colors.white: Colors.grey,height: 1.5),maxLines:
+         isDetailed==false&&size.width>700 && size.width< 750 ? 3: 
+         isDetailed==false&& size.width<470  ? 3  : isDetailed==false&&size.width>600 && size.width<700 ?   
+            6: isDetailed==false&& size.width>900 && size.width <1060 ? 6:isDetailed==true?50:4 ,
+            overflow: TextOverflow.ellipsis,),
+    //    const Spacer(),
+
+      // const SizedBox(height: defaultPadding/4,),
+        Visibility(
+          visible: isDetailed==false,
+          child: ProjectLinks(index: index,)),
+       const SizedBox(height:3,),
       ],
     );
   }

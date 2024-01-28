@@ -8,8 +8,8 @@ class DrawerImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
-      width: 100,
+      height: 80,
+      width: 80,
       padding: const EdgeInsets.all(defaultPadding/6),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(50),
@@ -28,7 +28,7 @@ class DrawerImage extends StatelessWidget {
           borderRadius: BorderRadius.circular(50),
           child: Transform.rotate(
               angle: 0.1,
-              child: Image.asset('assets/images/profile.png',fit: BoxFit.cover,))),
+              child: Image.asset('assets/images/ashiq.jpg',fit: BoxFit.cover,))),
     );
   }
 }

@@ -1,57 +1,43 @@
 class Project {
   final String name;
   final String description;
-  final String image;
-  final String link;
-  Project(this.name, this.description, this.image, this.link);
+  
+  Project(this.name, this.description );
 }
 
 List<Project> projectList = [
-  Project(
-    'Coffee Application',
-    'Presenting "Coffee" - a Flutter UI application that invites you to indulge in a delightful coffee adventure. Immerse yourself in the world of rich aroma and flavor as you browse through an exquisite selection of specialty coffees. With a user-friendly interface, exploring different blends and discovering their unique details becomes a delightful experience.',
-    'assets/images/coffee.png',
-    'https://github.com/Hamad-Anwar/Coffe-Shop-Beautifull-UI',
+    Project(
+    'Cityway',
+    'Welcome to CityWay, where our Customer App redefines the ride booking experience with a focus on efficiency, safety, and convenience. Seamlessly integrated into the CityWay ecosystem, this app empowers users to effortlessly navigate the city while enjoying the benefits of real-time driver tracking, intuitive maps, geolocation services, and more.\n\nKey Features:\n\nReal-Time Driver Tracking with Web Socket:\nExperience the power of real-time driver tracking through advanced Web Socket integration. Stay informed about your driver location with precision, ensuring you have real-time visibility into their movements and estimated time of arrival.\n\nInteractive Maps for Effortless Navigation:\nCityWay Customer App harnesses the capabilities of interactive maps to provide users with a user-friendly and intuitive navigation system. Plan your routes, track your journey in real-time, and enjoy a smooth, hassle-free ride from start to finish.\n\nGeolocation Services for Precision Pickups:\nUtilizing cutting-edge geolocation services, CityWay ensures accurate and reliable location information for both users and drivers. This guarantees that your driver can find you easily, facilitating quick and efficient pickups.\n\nSecure and Transparent Booking Process:\nTrust is paramount in the CityWay Customer App. Enjoy a secure and transparent booking process, with real-time updates on your driver progress and notifications for each stage of your journey. Know your driver details and track their movements, enhancing your overall peace of mind.\n\nEfficient Ride Planning and Fare Estimates:\nPlan your rides with ease using the efficient route planning feature. Receive accurate fare estimates upfront, ensuring full transparency in pricing. This enables you to make informed decisions and manage your budget effectively.',
+   
   ),
   Project(
-    'Car Controller Application UI',
-    'Car Control Dashboard is a user-friendly mobile application built using Flutter and powered by GetX for efficient state management. Enjoy a modern and intuitive design that adapts to various screen sizes, Interact with dynamic car controls, including speed, steering, and temperature. Realistic animations enhance the visual appeal, making it feel like you are controlling a real car!',
-    'assets/images/car.png',
-    'https://github.com/Hamad-Anwar/Car-Controller-Getx-Flutter',
+    'Cityway Pilot',
+    'CityWay Pilot stands at the forefront of modern ride booking solutions, offering a seamless and efficient experience for both drivers and passengers alike. This driver application is a pivotal component of the larger CityWay ecosystem, designed to optimize the entire ride-hailing process.\n\nKey Features:\n\nReal-Time Communication with Web Socket:\nHarnessing the power of real-time communication through Web Sockets, CityWay Pilot ensures instant connectivity between drivers and the customers. This not only facilitates quicker response times but also enhances the overall reliability of the service.\n\nGoogle Map Integration:\nThe integration of Google Maps provides drivers with an intuitive and accurate navigation system. This feature not only streamlines the driving process but also allows for efficient route planning, ensuring passengers reach their destinations with maximum convenience.\n\nLocation Tracking:\nCityWay Pilot incorporates advanced location tracking technology, allowing drivers to pinpoint their current location and providing precise details to passengers. This not only enhances safety but also contributes to a more streamlined and transparent ride experience.\n\nPush Notification System:\nStay connected and informed with the push notification system. Drivers receive real-time updates on ride requests, passenger details, and important notifications, ensuring they are always in the loop and can respond promptly to booking requests.\n\nSeamless User Interface:\nThe app boasts an intuitive and user-friendly interface, making it easy for drivers to navigate through features and functionalities. The design focuses on simplicity without compromising on essential tools and information, ensuring a smooth user experience.',
+    
   ),
+
   Project(
-      'Neumorphic Clockify',
-      'Neumorphic TimeKit is an open-source project that brings together the elegance of a beautifully designed alarm system, an analog clock with a neumorphic touch, and a feature-rich stopwatch. Whether you\'re looking for a functional alarm tool, a stylish desktop clock, or a precise stopwatch, TimeKit has you covered.',
-      'assets/images/alarm.jpg',
-      'https://github.com/Hamad-Anwar/Neumorphic-Analog-Clockify'),
+      'Twaddan Sp',
+      'The Twaddan SP (Service Provider) App is an integral component of the innovative Twaddan project, a cutting-edge car wash service in the UAE. Designed to streamline and enhance the operational efficiency of service providers within the Twaddan ecosystem, this application leverages advanced technologies such as Firebase Realtime Database and Google Maps to deliver a seamless and robust experience.\n\nKey Features:\n\nReal-time Booking Management:\nService providers can efficiently manage and monitor real-time bookings, ensuring optimal scheduling and utilization of resources. The Firebase Realtime Database facilitates instant updates, allowing providers to stay on top of their appointment schedules.\n\nDynamic Pricing and Packages:\nTwaddan SP App enables service providers to set dynamic pricing based on various factors such as location, service type, and time. Additionally, customizable service packages can be easily created and modified to cater to the diverse needs of customers.\n\nGeo-Location Integration:\nLeveraging the power of Google Maps, the app provides accurate geo-location services. Service providers can view the precise location of customers, making it easier to dispatch teams efficiently and navigate to the car wash locations.\n\nEfficient Fleet Management:\nThe app assists service providers in managing their fleet effectively. Real-time tracking of service vehicles, maintenance alerts, and route optimization features contribute to improved overall operational efficiency.',
+ ),
   Project(
-      'CUI Aider',
-      'CUI AIDER is an extraordinary application that brings together augmented reality (AR), a robust student portal, intuitive class management, and a comprehensive GPA system, providing an all-encompassing solution for students.Using AR technology, CUI AIDER offers an immersive experience, allowing users to explore the complete university campus virtually. Through AR, students can visualize buildings, navigate with interactive directions, and gain a better understanding of their surroundings.',
-      'assets/images/cui.png',
-      'https://github.com/Hamad-Anwar/'),
+      'Babilsouq',
+      'Introducing BabilSouq, a revolutionary e-commerce platform dedicated to the trade of high-quality used products. BabilSouq connects buyers and sellers in a vibrant marketplace, offering a seamless and trustworthy environment for the exchange of pre-owned items. This innovative app is designed to redefine the way users buy and sell used goods, providing a user-friendly experience enriched with advanced features.\n\nKey Features:\n\nExtensive Product Categories:\nBabilSouq spans a wide array of product categories, catering to the diverse needs and interests of users. From electronics and fashion to home appliances and more, the platform offers a comprehensive range of used items.\n\nUser-friendly Listing Interface:\nSellers can effortlessly create detailed listings for their used products, including images, descriptions, and pricing. The intuitive interface ensures that users can easily navigate and showcase their items effectively.\n\nAdvanced Search and Filters:\n\nBuyers can explore the marketplace with precision using advanced search filters. Filter options such as category, price range, condition, and location facilitate a tailored shopping experience, helping users find exactly what they are looking for.',
+ ),
   Project(
-      'Flutter Music Streaming Application',
-      'A Flutter music streaming application that allows users to play audio files from local storage. The app features a beautiful neumorphic UI design and provides a smooth user experience for browsing and playing music.',
-      'assets/images/player.png',
-      'https://github.com/Hamad-Anwar/Neumorphic-Music_Player-Flutter'),
+      'Magnus Franchise App',
+      'The Magnus Franchise App, in its initial phase, focuses on providing franchise owners with a robust solution for efficient attendance management within their training centers. Tailored specifically for the Magnus Training Company, this app simplifies the process of tracking and managing employee attendance during training sessions.\n\nKey Features:\n\nReal-time Attendance Tracking:\nFranchise owners can effortlessly record and monitor employee attendance in real-time during training sessions. The app provides a user-friendly interface for quickly marking attendance, streamlining the administrative process.\n\nAttendance Reports:\nThe app generates detailed attendance reports, offering insights into employee attendance patterns over specific periods. Franchise owners can easily review attendance history and identify trends for individual employees or the entire team.',
+    ),
   Project(
-      'Food Recipe App',
-      'This repository contains a Flutter implementation of a Food Recipe app with a captivating introduction section and impressive animations. It also features a signup and signin page with animations, elegantly presented on a bottom sheet.',
-      'assets/images/recipe.png',
-      'https://github.com/Hamad-Anwar/Food-Recipe-App-Flutter'),
+      'Magnus Employee App',
+      'The Magnus Employee App, in its initial phase, is crafted to empower employees within the Magnus Training Company to efficiently manage their attendance during training sessions. This user-centric app provides a seamless experience, allowing employees to mark their attendance, view their attendance history, and stay informed about training schedules.\n\nKey Features:\n\nAttendance Marking:\nEmployees can easily mark their attendance using the Magnus Employee App. The straightforward interface ensures a quick and hassle-free process for recording their presence during training sessions.\n\nReal-time Attendance Status:\nThe app provides employees with real-time updates on their attendance status. Instant feedback ensures that employees are aware of their attendance records, fostering a sense of accountability and punctuality.',
+    ),
+ 
+
   Project(
-      'Task Sync Pro',
-      'Welcome to the Beautiful Task Scheduler App repository! This Flutter-based task management application combines elegant design with a robust backend, ensuring a seamless and organized task management experience. From stunning UI to real-time synchronization, this app has you covered.',
-      'assets/images/task.png',
-      'https://github.com/Hamad-Anwar/Task-Sync-Pro-Flutter'),
-  Project(
-      'Flutter Chat Application with Firebase',
-      'Welcome to our innovative Flutter chat application! This feature-rich messaging platform allows users to connect and communicate seamlessly through text and images. The app is built using Flutter for the frontend and integrates with Firebase for backend services, including authentication, real-time database, and storage.',
-      'assets/images/chat.png',
-      'https://github.com/Hamad-Anwar/Messenger-App-Backend-Firebase'),
-  Project(
-      'Doctor Appointment Application',
-      'Introducing the extraordinary "Doctor Appointment System" - a state-of-the-art Flutter UI application that redefines healthcare accessibility and efficiency. Seamlessly crafted, this app empowers users to effortlessly select doctors based on categories, engage in smooth messaging, and access detailed profiles.',
-      'assets/images/doctor.png',
-      'https://github.com/Hamad-Anwar/Doctor-Appointment-Application-UI'),
+      'Tahssin Field Engineer App',
+      'The Tahssin Field Engineer App, a native Android application tailored for building management in the Gulf region. Developed with a focus on user-friendly functionality, this app serves as an indispensable tool for field engineers operating under the Tahssin initiative.While I was not the primary developer, my contribution has been focused on enhancing specific features within the Tahssin Field Engineer App.\n\nTask Management Dashboard:The app provides field engineers with a centralized dashboard to manage their tasks efficiently. Engineers can view assigned tasks, track progress, and receive real-time updates on building management activities.\n\nBuilding Information Database:\nAn extensive database is integrated into the app, offering detailed information about buildings under Tahssin management. Despite my involvement in only a few features, the app stands as a comprehensive solution for informed decision-making on-site.',
+    ),
+
 ];

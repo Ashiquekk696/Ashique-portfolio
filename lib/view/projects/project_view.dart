@@ -10,6 +10,8 @@ class ProjectsView extends StatelessWidget {
   final controller = Get.put(ProjectController());
   @override
   Widget build(BuildContext context) {
+
+    var size=MediaQuery.sizeOf(context);
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -17,15 +19,16 @@ class ProjectsView extends StatelessWidget {
           if(Responsive.isLargeMobile(context))const SizedBox(
             height: defaultPadding,
           ),
-          const TitleText(prefix: 'Latest', title: 'Projects'),
+          const TitleText(prefix: 'My', title: 'Projects'),
           const SizedBox(
             height: defaultPadding,
           ),
           Expanded(
-              child: Responsive(
-                  desktop: ProjectGrid(crossAxisCount: 3,),
+              child: 
+               Responsive(
+                  desktop: ProjectGrid(crossAxisCount: 3,ratio: 1.4),
                   extraLargeScreen: ProjectGrid(crossAxisCount: 4,),
-                  largeMobile: ProjectGrid(crossAxisCount: 1,ratio: 1.8),
+                  largeMobile: ProjectGrid(crossAxisCount: 1,ratio: 2.1),
                   mobile: ProjectGrid(crossAxisCount: 1,ratio: 1.5),
                   tablet: ProjectGrid(ratio: 1.4,crossAxisCount: 2,)))
         ],
